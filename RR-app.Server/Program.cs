@@ -38,6 +38,7 @@ app.UseAuthorization();
 
 app.UseEndpoints(endpoints => {
     endpoints.MapHub<RoomHub>("/room");
+    endpoints.MapHub<GameHub>("/game");
 });
 
 app.Run();
